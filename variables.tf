@@ -1,14 +1,14 @@
-Mylambdatest
+
 variable "function_name" {
   type = string
   default = ""
 }
-index.lambda_handler
+
 variable "lambda_handler" {
   type = string
   default = ""
 }
-"python3.8"
+
 variable "runtime" {
   type = string
   default = ""
