@@ -7,3 +7,4 @@ resource "aws_lambda_function" "test_lambda" {
   role = var.lambda_execution_role
  # s3_bucket = var.s3_bucket
   #s3_key = var.s3_key
+}
