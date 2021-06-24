@@ -19,16 +19,16 @@ variable "lambda_execution_role" {
   default = ""
 }
 
-s3_bucket
+#s3_bucket
 
-variable "s3_bucket" {
-  type = string
-  default = ""
-}
+#variable "s3_bucket" {
+#  type = string
+ # default = ""
+#}
 
-"lambdacode.zip"
+#"lambdacode.zip"
 
-variable "s3_key" {
-  type = string
-  default = ""
-}
+#variable "s3_key" {
+#  type = string
+ # default = ""
+#}
