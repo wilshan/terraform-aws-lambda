@@ -32,3 +32,18 @@ variable "region_name" {
   type = string
   default = ""
 }
+
+variable "lambda_layer_file" {
+  type = string
+  default = ""
+}
+
+variable "lambda_layer_name" {
+  type = string
+  default = ""
+}
+
+variable "layer_runtime" {
+  type = string
+  default = ""
+}
