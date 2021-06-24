@@ -2,5 +2,5 @@ resource "aws_lambda_layer_version" "lambda_layer" {
   filename   = var.lambda_layer_file
   layer_name = var.lambda_layer_name
 
-  compatible_runtimes = var.layer_runtime
+  compatible_runtimes = [var.layer_runtime]
 }
