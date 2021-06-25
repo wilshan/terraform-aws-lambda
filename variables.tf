@@ -82,3 +82,23 @@ variable "suffix" {
   type = string
   default = ""
 }
+
+variable "statement_id" {
+  type = string
+  default = ""
+}
+
+variable "action" {
+  type = string
+  default = ""
+}
+
+variable "principle" {
+  type = string
+  default = ""
+}
+
+variable "source_arn" {
+  type = string
+  default = ""
+}
