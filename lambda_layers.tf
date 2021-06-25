@@ -1,5 +1,5 @@
 resource "aws_lambda_layer_version" "lambda_layer" {
-   filename {
+   s3_target {
     path = "s3://${var.bucketname}"
   }
   #filename   = var.lambda_layer_file
