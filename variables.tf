@@ -57,3 +57,28 @@ variable "bucketname" {
   type = string
   default = ""
 }
+
+variable "event_bucket_name" {
+  type = string
+  default = ""
+}
+
+variable "aws_lambda_function" {
+  type = string
+  default = ""
+}
+
+variable "event_type" {
+  type = string
+  default = ""
+}
+
+variable "prefix" {
+  type = string
+  default = ""
+}
+
+variable "suffix" {
+  type = string
+  default = ""
+}
