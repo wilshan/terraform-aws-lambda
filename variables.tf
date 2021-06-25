@@ -52,3 +52,8 @@ variable "compatible_runtimes" {
   type = string
   default = ""
 }
+
+variable "bucketname" {
+  type = string
+  default = ""
+}
