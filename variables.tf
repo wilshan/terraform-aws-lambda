@@ -47,3 +47,18 @@ variable "layer_runtime" {
   type = string
   default = ""
 }
+
+variable "compatible_runtimes" {
+  type = string
+  default = ""
+}
+
+variable "compatible_runtimes" {
+  type = string
+  default = ""
+}
+
+variable "lambda_layer_name" {
+  type = string
+  default = ""
+}
