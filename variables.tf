@@ -83,17 +83,17 @@ variable "suffix" {
   default = ""
 }
 
-variable "statement_id" {
+variable "statement_id1" {
   type = string
   default = ""
 }
 
-variable "action" {
+variable "action1" {
   type = string
   default = ""
 }
 
-variable "principle" {
+variable "principle1" {
   type = string
   default = ""
 }
@@ -102,3 +102,35 @@ variable "source_arn" {
   type = string
   default = ""
 }
+
+variable "cwrulename" {
+ type = string
+  default = "lambda_trigger_every-five-minutes"
+}
+
+variable "Schedule" {
+ type = string
+  default = "rate(5 minutes)"
+}
+
+test_lambda
+variable "target_id" {
+ type = string
+  default = "test_lambda"
+}
+
+variable "statement_id2" {
+ type = string
+  default = "AllowExecutionFromCloudWatch"
+}
+
+variable "action2" {
+ type = string
+  default = "lambda:InvokeFunction"
+}
+
+variable "principle" {
+ type = string
+  default = "events.amazonaws.com"
+}
+
