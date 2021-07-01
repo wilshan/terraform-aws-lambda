@@ -129,7 +129,7 @@ variable "action2" {
   default = "lambda:InvokeFunction"
 }
 
-variable "principle" {
+variable "principle2" {
  type = string
   default = "events.amazonaws.com"
 }
