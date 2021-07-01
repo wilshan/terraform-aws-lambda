@@ -10,6 +10,7 @@ resource "aws_cloudwatch_event_target" "lambda_trigger_every_five_minutes" {
     rule = "${aws_cloudwatch_event_rule.lambda_trigger_every_five_minutes.name}"
     target_id = var.target_id
     arn = aws_lambda_function.test_lambda.arn
+    Status = "Disabled"
 }
 
 resource "aws_lambda_permission" "allow_cloudwatch_to_call_test_lambda" {
