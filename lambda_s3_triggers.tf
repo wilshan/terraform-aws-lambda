@@ -11,9 +11,9 @@ filter_suffix       = var.suffix
 }
 
 resource "aws_lambda_permission" "test" {
-statement_id  = var.statement_id
-action        = var.action
+statement_id  = var.statement_id1
+action        = var.action1
 function_name = aws_lambda_function.test_lambda.function_name
-principal = var.principle
+principal = var.principle1
 source_arn = var.source_arn
 }
