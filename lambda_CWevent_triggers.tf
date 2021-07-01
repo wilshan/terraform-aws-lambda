@@ -1,5 +1,11 @@
 # Adding Cloudwatch events as trigger to my lambda and giving the permissions
 ##################
+resource "aws_cloudwatch_event_rule" "lambda_trigger_every_five_minutes" {
+    name = "lambda_trigger_every-five-minutes"
+    description = "Fires every five minutes"
+    schedule_expression = "rate(5 minutes)"
+}
+
 resource "aws_cloudwatch_event_target" "lambda_trigger_every_five_minutes" {
     rule = "${aws_cloudwatch_event_rule.lambda_trigger_every_five_minutes.name}"
     target_id = "test_lambda"
