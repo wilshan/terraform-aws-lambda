@@ -113,7 +113,6 @@ variable "Schedule" {
   default = "rate(5 minutes)"
 }
 
-test_lambda
 variable "target_id" {
  type = string
   default = "test_lambda"
