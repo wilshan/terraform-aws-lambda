@@ -10,10 +10,10 @@ filter_suffix       = var.suffix
 }
 }
 
-resource "aws_lambda_permission" "test" {
-statement_id  = var.statement_id1
-action        = var.action1
-function_name = aws_lambda_function.test_lambda.function_name
-principal = var.principle1
-source_arn = var.source_arn
-}
+#resource "aws_lambda_permission" "test" {
+#statement_id  = var.statement_id1
+#action        = var.action1
+#function_name = aws_lambda_function.test_lambda.function_name
+#principal = var.principle1
+#source_arn = var.source_arn
+#}
