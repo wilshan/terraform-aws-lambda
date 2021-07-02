@@ -3,7 +3,7 @@
 resource "aws_cloudwatch_event_rule" "lambda_trigger_every_five_minutes" {
     name = var.cwrulename
     description = "Fires every five minutes"
-    schedule_expression = var.Schedule
+    schedule_expression = var.schedule
 }
 
 resource "aws_cloudwatch_event_target" "lambda_trigger_every_five_minutes" {
