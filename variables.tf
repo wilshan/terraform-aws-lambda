@@ -110,7 +110,7 @@ variable "cwrulename" {
   default = "lambda_trigger_every-five-minutes"
 }
 
-variable "Schedule" {
+variable "schedule" {
  type = string
   default = "rate(5 minutes)"
 }
